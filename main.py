@@ -25,7 +25,7 @@ while True:
         for landmark in left:
             x = int(landmark.x * frame_w)
             y = int(landmark.y * frame_h)
-            cv2.circle(frame, (x,y), 3, (255,0,0))
+            cv2.ircle(frame, (x,y), 3, (255,0,0))
         #difference between top part of eye and bottom
         if(left[0].y - left[1].y) < 0.01:
             pyautogui.click()
